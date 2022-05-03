@@ -1,0 +1,39 @@
+@import '../../styles/sass/mixins';
+@import '../../styles/sass/variables';
+
+a:link {
+  text-decoration: none;
+}
+
+.button {
+  border: none;
+  @include flex(row,center,center,nowrap);
+  @include text($fontFamilyPoppins, 14px, 1.2,400);
+  text-transform: uppercase;
+  padding: 0 15px;
+  max-width: 160px;
+  width: 100%;
+  color:$textColor;
+  outline: none;
+  position: relative;
+  z-index: 0;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background:$primaryColor;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.2s ease-in-out;
+  }
+  &:hover {
+    text-decoration: none;
+    color:$textColor;
+    &::after {
+      width: 100%;
+      height: 140%;
+      transition: all 0.3s ease-in-out 0s;
+    }
+  }
+}

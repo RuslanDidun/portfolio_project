@@ -1,0 +1,29 @@
+@import './../common/styles/sass/variables';
+
+.skillsBlock {
+  height: 100%; /*выравниваем по всей длинне страницы*/
+  background-color: $backGroundColor2;
+
+  .skillsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+
+  }
+
+  .skills {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    //медиапоинт при просмотре на телефоне
+    @media screen and (max-width: 624px) {
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 938px) {
+    justify-content: center;
+  }
+}
+

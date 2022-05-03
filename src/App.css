@@ -1,3 +1,16 @@
+/*блокирует прокрутку вверх и вниз*/
+/*body {*/
+/*  overscroll-behavior: none;*/
+/*}*/
+
+html,body{
+  overscroll-behavior: contain;
+  background-color: #1A1A1AFF;
+}
+*, html {
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
 }

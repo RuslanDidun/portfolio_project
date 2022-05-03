@@ -1,0 +1,58 @@
+@import '../../common/styles/sass/variables';
+
+
+.myProjects {
+  width: 450px;
+  background-color: $backGroundColor2;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 45px;
+
+  .icon {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    /*псевдоэлемент затемнение картинки */
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: black;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.5;
+    }
+  }
+
+  .projectInfo {
+    padding: 25px 20px;
+
+    .projectTitle {
+      font-family: $fontFamilyJosefin;
+      font-size: 16px;
+      letter-spacing: 1px;
+      margin: 0 0 5px;
+      line-height: 1.2;
+      color: $textColor;
+    }
+
+    .description {
+      font-family: $fontFamilyPoppins;
+      color: $textColor;
+      line-height: 1.8;
+      font-weight: 450;
+      font-size: 12px;
+    }
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+/*.photo {*/
+/*    position: relative;*/
+/*    z-index: 1;*/
+/*    background-color: $backGroundColor2;*/
+/*@media screen and (max-width: 1143px) {*/
+/*    margin-top: 150px;*/
+/*}*/
+/*.image {*/
+/*    height: 400px;*/
+/*    width: 300px;*/
+/*    @include bgSettings();*/
+/*@media screen and (max-width: 600px){*/
+/*    height: 360px;*/
+/*    width: 260px;*/
+/*    transition: .5s;*/
+/*}*/
+/*&:before {*/
+/*     content: "";*/
+/*     position: absolute;*/
+/*     width: 105%;*/
+/*     height: 110%;*/
+/*     border: 5px solid $primaryColor;*/
+/*     left: 15px;*/
+/*     top: -15px;*/
+/*     z-index: -1;*/
+/* }*/
+/*}*/
+/*}*/

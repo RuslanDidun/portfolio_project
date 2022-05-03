@@ -1,0 +1,80 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
+
+.mainBlock {
+  min-height: 100vh;
+  background-color: $backGroundColor1;
+
+  @media screen and (max-width: 1143px) {
+    align-items: center;
+  }
+  @media screen and (max-width: 666px) {
+    align-items: center;
+  }
+
+  position: relative; //background photo
+  z-index: 0;
+
+  @include flex(row, center, center, nowrap);
+  padding: 100px 0;
+
+  .bgImage {
+    background-image: url('../Assets/Images/bg1.jpg');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.5;
+  }
+
+  .container {
+    @include container();
+    @include flex(row, space-around, center, wrap);
+
+    .mainText {
+      @include flex(column, flex-start, flex-start, nowrap);
+      color: $textColor;
+      //margin-right: 350px; //смещаем подпись вправо
+      span {
+        font-size: 16px;
+
+        &:nth-child(2) {
+          @include text($fontFamilyJosefin, 50px, 1.2, 700);
+          letter-spacing: 3px;
+          margin: 10px 0;
+
+          span {
+            @include text($fontFamilyJosefin, 50px, 1.2, 700);
+            letter-spacing: 5px;
+            position: relative;
+            z-index: 0;
+            display: inline-block;
+
+            &:before {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 20px;
+              background-color: $primaryColor;
+              bottom: 0;
+              z-index: -1;
+            }
+          }
+        }
+      }
+
+      h1 {
+        @include text($fontFamilyJosefin, 20px, 1.8, 400);
+        margin: 0;
+      }
+    }
+  }
+}
+
+
+
+
+
+

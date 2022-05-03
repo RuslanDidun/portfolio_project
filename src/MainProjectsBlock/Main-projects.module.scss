@@ -1,0 +1,34 @@
+@import './../common/styles/sass/variables';
+
+.mainProjectBlock {
+  background-color: $backGroundColor1;
+
+  .blockContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+
+  .myProjects {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    align-items: flex-start;
+    @media screen and (max-width: 938px) {
+      justify-content: center;
+      @media screen and (min-width: 624px) {
+        justify-content: center;
+        width: 100%;
+      }
+    }
+  }
+
+  /*если минимальная ширина 938 то медиа поинт*/
+
+}
+
+
+
