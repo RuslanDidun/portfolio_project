@@ -1,15 +1,25 @@
 @import '../common/styles/sass/variables.scss';
-a {
-    color: #ffffff;
-}
-.header {
-    height: 80px;
-    background-color: $backGroundColor2;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
+@import '../common/styles/sass/mixins.scss';
 
+
+//.header {
+//    height: 80px;
+//    background-color: $backGroundColor2;
+//    display: flex;
+//    justify-content: flex-end;
+//    align-items: center;
+//}
+
+.header {
+  height: 80px;
+  padding: 0 30px;
+  @include flex(row, flex-end, center, nowrap);
+  opacity: 0.8;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  right: 0;
+}
 
 /* justify-content - по горизонтали
 flex-start: Items align to the left side of the container.

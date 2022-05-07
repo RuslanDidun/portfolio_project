@@ -16,6 +16,7 @@ const MainProjectsBlock = () => {
         backgroundImage: `url(${todoImage})`,
     }
 
+
     return (
         <div id='projects' className={style.mainProjectBlock}>
             <div className={`${styleContainer.container} ${style.blockContainer}`}>
