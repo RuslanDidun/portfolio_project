@@ -29,10 +29,12 @@ const MainProjectsBlock = () => {
                     <Fade bottom>
                         <MyProjects style={socialNetworkImage}
                                     title={'Social Network'}
+                                    hrefToProps='https://github.com/Kano066/mySocialNetworkProject'
                                     description={'Absolutely functional social network.' +
                                         'Used React + redux. Hooks, Reducers, Thunks.'}/>
                         <MyProjects style={todoListImage}
                                     title={'Organizer'}
+                                    hrefToProps='https://github.com/Kano066/myTodoListProject'
                                     description={'Small application, which helps to make your own todo list.' +
                                         'Used React + redux'}/>
                     </Fade>

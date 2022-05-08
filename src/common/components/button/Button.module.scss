@@ -1,9 +1,9 @@
 @import '../../styles/sass/mixins';
 @import '../../styles/sass/variables';
 
-a:link {
-  text-decoration: none;
-}
+//a:link {
+//  text-decoration: none;
+//}
 
 .button {
   border: none;
@@ -17,6 +17,7 @@ a:link {
   outline: none;
   position: relative;
   z-index: 0;
+
   &::after {
     content: "";
     position: absolute;
