@@ -71,7 +71,14 @@
       }
     }
   }
+  .quoteDiv{
+    padding: 40px;
+    left: 0;
+    @include text($fontFamilyJosefin, 16px, 1, 600);
+  }
 }
+
+
 
 
 
